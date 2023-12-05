@@ -411,7 +411,7 @@ build_root = meson.current_build_dir()
 # We use tracker-miners-3.0 rather than tracker3-miners inside the lib64
 # directory, following the existing convention in that directory.
 tracker_api_versioned_name = 'tracker-miners-@0@'.format(tracker_api_version)
-tracker_internal_libs_dir = join_paths(get_option('prefix'), get_option('libdir'), tracker_api_versioned_name)
+tracker_internal_libs_dir = join_paths(get_option('prefix'), get_option('libdir')
 
 tracker_extract_modules_dir = join_paths(get_option('prefix'), get_option('libdir'), tracker_api_versioned_name, 'extract-modules')
 tracker_writeback_modules_dir = join_paths(get_option('prefix'), get_option('libdir'), tracker_api_versioned_name, 'writeback-modules')
